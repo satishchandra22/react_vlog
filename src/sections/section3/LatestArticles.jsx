@@ -11,12 +11,12 @@ const LatestArticle = (p)=>{
             </div>
         <div id='s3i'>
         <div id='s3l' >
-        <S3c1 img={p.img}/>
-        <S3c2 img={p.img}/>
+        <S3c1 data={p.data.s3c1}/>
+        <S3c2 data={p.data.s3c2}/>
         </div>
         <div id='s3r'>
         <S3c3/>
-        <S3c4 img={p.img}/>
+        <S3c4 data={p.data.s3c3}/>
         </div>
         </div>
         </div>

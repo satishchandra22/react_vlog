@@ -7,6 +7,7 @@ import Hollywood from "./hollywood";
 import Fitness from "./fitness";
 import Food from "./food";
 import Post from "./post";
+import Notfound from "./notfound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
            <Route path='/fitness' element={<Fitness/>}/>
            <Route path='/food' element={<Food/>}/>
            <Route path='/post' element={<Post/>}/>
+           <Route path='*' element={<Notfound/>}/>
          </Routes>
       </BrowserRouter>
     </div>

@@ -7,13 +7,10 @@ const S3c4 = (p)=>{
             Top Posts
             <hr id='s3hr1'/>
             </div>
-            <S3c4g1 img={p.img}/>
-            <S3c4g2 img={p.img}/>
-            <S3c4g2 img={p.img}/>
-            <S3c4g2 img={p.img}/>
-            <div id='s3c4n2'>2</div>
-            <div id='s3c4n3'>3</div>
-            <div id='s3c4n4'>4</div>
+            <S3c4g1 data={p.data.s3c3g1}/>
+            <S3c4g2 data={p.data.s3c3g2} rank={2}/>
+            <S3c4g2 data={p.data.s3c3g3} rank={3}/>
+            <S3c4g2 data={p.data.s3c3g4} rank={4}/>
         </div>
     )
 }

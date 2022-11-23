@@ -2,16 +2,16 @@ import {Link} from 'react-router-dom';
 const S2post = (p)=>{
     return (
         <Link to='/post' id='s2c1' style={{textDecoration:'none'}}>
-           <div id='s2c1img' style={{backgroundImage: `url(${p.img})`}}></div>
+           <div id='s2c1img' style={{backgroundImage: `url(${p.data.img})`}}></div>
            <div id='s2c1g1'>
             <span id='s2c1t1'>
-            Joshua Tree Overnight Adventure
+            {p.data.head}
             </span><br/>
             <span id='s2c1t2'>
-            Gujarat is vastly underrated and it's a mystery to us why the region isn’t more well-known as a tourist destination. It has a plethora of temples and palaces
+            {p.data.text}
             </span><br/><br/>
             <span id='s2c1t3'>
-                <b>Travel</b>/ August 21 2017
+                <b>{p.data.cat}</b>/ {p.data.time}
             </span>
            </div>
         </Link>

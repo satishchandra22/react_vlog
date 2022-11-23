@@ -231,7 +231,7 @@
 }
 #s3c4{
 
-  height: 890px;
+  
   position:relative;
 }
 #s3ch1{
@@ -266,12 +266,21 @@
   right: 25px;
   top: 0px;
 }
+.s3c4n1{
+  font-size: 60px;
+  font-weight: 500;
+  color: lightgrey;
+  position: absolute;
+  right: 25px;
+  top: 0px;
+}
 #s3c4g2img{
   height:90px;
   width:90px;
   background-size: cover;
 }
 #s3c4g2{
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   margin-top: 10px;
@@ -619,6 +628,9 @@
   grid-template-columns: 2fr 1fr;
   gap:40px
 }
+#bsr1{
+  margin-bottom: 20px;
+}
 #menu{
   width:25px;
   height:25px;
@@ -642,13 +654,13 @@
     margin-bottom: 5px;
   }
   #nav{
-    width:100%;
+    width:80%;
     border:none;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 2px 5px lightgrey;
+    box-shadow: 0px 2px 8px 5px lightgrey;
 
   }
   #menu{

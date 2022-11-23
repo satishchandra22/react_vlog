@@ -1,11 +1,26 @@
 import Nav from './navbar';
 import Content from './content';
+import { useEffect } from 'react';
+import { useState } from 'react';
 const Technology = ()=>{
-    const pic = 'https://media.istockphoto.com/photos/abs-hologram-data-flow-grid-picture-id1212064060?k=20&m=1212064060&s=612x612&w=0&h=LrW6gxz5eC5H-fyJF6PFdCUdtHAfBRMxho1hx-YluL4=';
+    const [data , setdata] = useState({s1:[{id:'nan'}],s2:{s3c3g1:{img:'',head:'',time:'',cat:''},s3c3g2:{img:'',head:'',time:'',cat:''},s3c3g3:{img:'',head:'',time:'',cat:''},s3c3g4:{img:'',head:'',time:'',cat:''}}});
+    useEffect(()=>{
+      const url = 'https://react-blog-backend-satish.herokuapp.com/technology'
+      const fetchData = async ()=>{
+        try {
+          const response = await fetch(url);
+          const json = await response.json();
+          setdata({s1:json.s1,s2:json.s2})
+        }catch (error) {
+          console.log('error',error);
+        }
+      }
+      fetchData();
+    },[])
     return (
         <div>
             <Nav/>
-            <Content pic={pic} title={'Technology'}/>
+            <Content data={data} title={'Technology'}/>
         </div>
     )
 }

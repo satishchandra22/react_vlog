@@ -7,9 +7,9 @@ const Latest = (p)=>{
             <hr id='s2hr'/>
             </div>
             <div id='s2c'>
-            <S2post img={p.img}/>
-            <S2post img={p.img}/>
-            <S2post img={p.img}/>
+            <S2post data={p.data.s2c1}/>
+            <S2post data={p.data.s2c2}/>
+            <S2post data={p.data.s2c3}/>
             </div>
         </div>
     )
